@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FilmFusionDapperCoreMVCProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb02b6a3de099b87412006f7c06c26f162179b9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6e06c411ae262f3877e9fb3157c7e774a4c733b")]
 [assembly: System.Reflection.AssemblyProductAttribute("FilmFusionDapperCoreMVCProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FilmFusionDapperCoreMVCProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
