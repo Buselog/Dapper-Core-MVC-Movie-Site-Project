@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VxRI3AtbV8o=",
+  "dgSpecHash": "PjCDRfvgE5g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\BUSE\\source\\repos\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj",
+  "projectFilePath": "C:\\Users\\BUSE\\Documents\\GitHub\\Dapper-Core-MVC-Movie-Site-Project\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BUSE\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\BUSE\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

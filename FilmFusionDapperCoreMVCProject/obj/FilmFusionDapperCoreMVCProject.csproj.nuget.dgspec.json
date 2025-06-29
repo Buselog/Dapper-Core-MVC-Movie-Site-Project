@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BUSE\\source\\repos\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj": {}
+    "C:\\Users\\BUSE\\Documents\\GitHub\\Dapper-Core-MVC-Movie-Site-Project\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BUSE\\source\\repos\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj": {
+    "C:\\Users\\BUSE\\Documents\\GitHub\\Dapper-Core-MVC-Movie-Site-Project\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BUSE\\source\\repos\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj",
+        "projectUniqueName": "C:\\Users\\BUSE\\Documents\\GitHub\\Dapper-Core-MVC-Movie-Site-Project\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj",
         "projectName": "FilmFusionDapperCoreMVCProject",
-        "projectPath": "C:\\Users\\BUSE\\source\\repos\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj",
+        "projectPath": "C:\\Users\\BUSE\\Documents\\GitHub\\Dapper-Core-MVC-Movie-Site-Project\\FilmFusionDapperCoreMVCProject\\FilmFusionDapperCoreMVCProject.csproj",
         "packagesPath": "C:\\Users\\BUSE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BUSE\\source\\repos\\FilmFusionDapperCoreMVCProject\\obj\\",
+        "outputPath": "C:\\Users\\BUSE\\Documents\\GitHub\\Dapper-Core-MVC-Movie-Site-Project\\FilmFusionDapperCoreMVCProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
