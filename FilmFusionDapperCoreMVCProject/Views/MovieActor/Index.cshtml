@@ -1,0 +1,47 @@
+﻿@model IEnumerable<FilmFusionDapperCoreMVCProject.Models.MovieActor>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header d-flex align-items-center justify-content-between mb-4">
+	<h2 class="page-title"><i class="fa-solid fa-hat-wizard"></i> Movie-Actor</h2>
+	<a href="/MovieActor/AddMovieActor" class="btn btn-add">
+		<i class="fas fa-plus me-1"></i> Add New Field
+	</a>
+</div>
+
+
+<div class="fade-slide-in">
+	<table class="table-frosted table-hover text-white">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Movie</th>
+				<th>Actor</th>
+				<th>Character Name</th>
+				<th>Operations</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.MovieActorId</td>
+					<td>@item.Movie.Title</td>
+					<td>@item.Actor.FullName</td>
+					<td>@item.CharacterName</td>
+					<td>
+						<a class="btn btn-custom" href="/MovieActor/UpdateMovieActor/@item.MovieActorId">Update</a>
+						&nbsp;
+						<a class="btn btn-custom" href="/MovieActor/DeleteMovieActor/@item.MovieActorId">Delete</a>
+					</td>
+
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+
+

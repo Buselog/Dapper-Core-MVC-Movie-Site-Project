@@ -1,0 +1,25 @@
+﻿@model FilmFusionDapperCoreMVCProject.Models.Genre
+@{
+    ViewData["Title"] = "AddGenre";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="update-form-container">
+	<div class="frosted-form-box fade-slide">
+		<h2 class="form-title">Add New Genre</h2>
+
+		<form asp-action="AddGenre" asp-controller="Genre" method="post">
+
+			<div class="form-group mb-3">
+				<label asp-for="GenreName" class="form-label">Genre</label>
+				<input asp-for="GenreName" class="form-control form-input" />
+				@*   <span asp-validation-for="FullName" class="text-danger">This field can not empty</span> *@
+			</div>
+
+			<button type="submit" class="btn btn-update">Add</button>
+		</form>
+	</div>
+</div>
+
+

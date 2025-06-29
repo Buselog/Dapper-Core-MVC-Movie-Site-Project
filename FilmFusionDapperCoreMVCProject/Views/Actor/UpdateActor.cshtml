@@ -1,0 +1,38 @@
+﻿@model FilmFusionDapperCoreMVCProject.Models.Actor
+@{
+	ViewData["Title"] = "UpdateActor";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="update-form-container">
+	<div class="frosted-form-box fade-slide">
+		<h2 class="form-title">Update Actor</h2>
+
+		<div class="poster-preview-wrapper text-center mb-4">
+			<img src="@Model.ActorPhotoUrl" alt="Poster Preview" class="poster-preview-img" />
+		</div>
+
+		<form asp-action="UpdateActor" asp-controller="Actor" method="post">
+			@Html.HiddenFor(m => m.ActorId)
+
+			<div class="form-group mb-3">
+				<label asp-for="FullName" class="form-label">Name</label>
+				<input asp-for="FullName" class="form-control form-input" />
+			</div>
+
+			<div class="form-group mb-3">
+				<label asp-for="BirthDate" class="form-label">Date Of Birth</label>
+				<input asp-for="BirthDate" type="date" class="form-control form-input">
+			</div>
+
+			<div class="form-group mb-3">
+				<label asp-for="ActorPhotoUrl" class="form-label">Photo</label>
+				<textarea asp-for="ActorPhotoUrl" class="form-control form-input" rows="3"></textarea>
+			</div>
+
+			<button type="submit" class="btn btn-update">Update</button>
+		</form>
+	</div>
+</div>
+

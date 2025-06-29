@@ -1,0 +1,57 @@
+﻿@model FilmFusionDapperCoreMVCProject.Models.MovieActor
+@{
+    ViewData["Title"] = "UpdateMovieActor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="update-form-container">
+	<div class="frosted-form-box fade-slide">
+		<h2 class="form-title">Update Movie Actor</h2>
+
+		<form asp-action="UpdateMovieActor" asp-controller="MovieActor" method="post">
+			@Html.HiddenFor(m => m.MovieActorId)
+
+			<div class="form-group mb-3">
+				<label asp-for="Movie.Title" class="form-label">Movie</label>
+				<select asp-for="Movie.MovieId" class="form-control frosted-dropdown">
+					<option>@Model.Movie.Title</option>
+					@foreach (var movie in ViewBag.Movies)
+					{
+						<option value="@movie.MovieId"
+								selected="@(movie.MovieId == Model.Movie?.MovieId ? "selected" : null)">
+							@movie.Title
+						</option>
+
+					}
+				</select>
+				</div>
+
+			<div class="form-group mb-3">
+				<label asp-for="Actor.FullName" class="form-label">Actor</label>
+				@* <input asp-for="Actor.FullName" class="form-control form-input" />
+				<input type="hidden" asp-for="Actor.ActorId" /> *@
+				<select asp-for="Actor.ActorId" class="form-control frosted-dropdown">
+					<option>@Model.Actor.FullName</option>
+					@foreach (var actor in ViewBag.Actors)
+					{
+						<option value="@actor.ActorId"
+								selected="@(actor.ActorId == Model.Actor?.ActorId ? "selected" : null)">
+							@actor.FullName
+						</option>
+
+					}
+				</select>
+
+			</div>
+
+			<div class="form-group mb-3">
+				<label asp-for="CharacterName" class="form-label">Character Name</label>
+				<input asp-for="CharacterName" class="form-control form-input" />
+			</div>
+
+			<button type="submit" class="btn btn-update">Update</button>
+		</form>
+	</div>
+</div>
+

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<FilmFusionDapperCoreMVCProject.Models.Genre>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "_Layout";
+}
+
+<div class="page-header d-flex align-items-center justify-content-between mb-4">
+	<h2 class="page-title"><i class="fa-solid fa-book-open"></i> Genres</h2>
+	<a href="/Genre/AddGenre" class="btn btn-add">
+		<i class="fas fa-plus me-1"></i> Add New Field
+	</a>
+</div>
+
+<div class="fade-slide-in">
+	<table class="table-frosted table-hover text-white">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Genre</th>
+				<th>Film Count</th>
+				<th>Operations</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.GenreId</td>
+					<td>@item.GenreName</td>
+					<td>@item.MovieCount</td>
+					<td>
+						<a class="btn btn-custom" href="/Genre/UpdateGenre/@item.GenreId">Update</a>
+						&nbsp;
+						<a class="btn btn-custom" href="/Genre/DeleteGenre/@item.GenreId">Delete</a>
+					</td>
+
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+

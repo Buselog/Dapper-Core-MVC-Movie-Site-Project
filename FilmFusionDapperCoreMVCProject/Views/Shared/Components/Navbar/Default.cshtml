@@ -1,0 +1,34 @@
+﻿@* 
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-secondary px-3">
+    <a class="navbar-brand" href="/">🎬 FilmFusion</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" asp-controller="Genre" asp-action="Index">Category</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Actor" asp-action="Index">Actors</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Movie" asp-action="Index">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="MovieActor" asp-action="Index">Movie With Actors</a></li>
+        </ul>
+    </div>
+</nav>
+ *@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-glass sticky-top px-3">
+    <a class="navbar-brand mx-auto fs-3 fw-bold" href="/">
+        <span class="navbar-icon">🎬</span> FilmFusion
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-3 fs-5">
+            <li class="nav-item"><a class="nav-link" asp-controller="Genre" asp-action="Index">Genres</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Actor" asp-action="Index">Actors</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Movie" asp-action="Index">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="MovieActor" asp-action="Index">Movie With Actors</a></li>
+        </ul>
+    </div>
+</nav>

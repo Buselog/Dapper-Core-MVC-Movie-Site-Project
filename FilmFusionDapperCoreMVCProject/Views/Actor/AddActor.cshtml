@@ -1,0 +1,35 @@
+﻿@model FilmFusionDapperCoreMVCProject.Models.Actor
+@{
+    ViewData["Title"] = "AddActor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="update-form-container">
+	<div class="frosted-form-box fade-slide">
+		<h2 class="form-title">Add New Actor</h2>
+
+		<form asp-action="AddActor" asp-controller="Actor" method="post">
+			
+			<div class="form-group mb-3">
+				<label asp-for="FullName" class="form-label">Name</label>
+				<input asp-for="FullName" class="form-control form-input" />
+			</div>
+
+			<div class="form-group mb-3">
+				<label asp-for="BirthDate" class="form-label">Date Of Birth</label>
+				<input asp-for="BirthDate" type="date" class="form-control form-input">
+			</div>
+
+			<div class="form-group mb-3">
+				<label asp-for="ActorPhotoUrl" class="form-label">Photo</label>
+				<textarea asp-for="ActorPhotoUrl" class="form-control form-input" rows="3"></textarea>
+			</div>
+
+			<button type="submit" class="btn btn-update">Add</button>
+		</form>
+	</div>
+</div>
+
+

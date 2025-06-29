@@ -1,0 +1,54 @@
+﻿@model IEnumerable<FilmFusionDapperCoreMVCProject.Models.Movie>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header d-flex align-items-center justify-content-between mb-4">
+	<h2 class="page-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Movies</h2>
+	<a href="/Movie/AddMovie" class="btn btn-add">
+		<i class="fas fa-plus me-1"></i> Add New Field
+	</a>
+</div>
+
+<div class="fade-slide-in">
+	<table class="table-frosted table-hover text-white">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Movie</th>
+				<th>Release Year</th>
+				<th>Genre</th>
+				<th>Description</th>
+				<th>Poster</th>
+				<th>Operations</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.MovieId</td>
+					<td>@item.Title</td>
+					<td>@item.ReleaseYear</td>
+					<td>@item.Genre.GenreName</td>
+					<td>@item.Description</td>
+					<td>
+						<img src="@item.PosterUrl" style="width: 110px" alt="Poster" />
+
+					</td>
+					<td>
+						<div class="button-group">
+							<a class="btn btn-custom" href="/Movie/UpdateMovie/@item.MovieId">Update</a>
+							<a class="btn btn-custom" href="/Movie/DeleteMovie/@item.MovieId">Delete</a>
+						</div>
+					</td>
+
+
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+

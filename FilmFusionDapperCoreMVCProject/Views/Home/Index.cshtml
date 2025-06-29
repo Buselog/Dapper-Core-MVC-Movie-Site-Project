@@ -1,0 +1,123 @@
+﻿@model List<Movie>
+@{
+	ViewData["Title"] = "Dashboard";
+}
+
+<div class="dashboard-fade-in">
+
+	<!-- Başlık ve GIF -->
+	<header class="text-center mb-5">
+		<div class="header-icon">🎥</div>
+		<h1 class="display-4 fw-bold header-title">FilmFusion</h1>
+		<p class="header-subtitle mt-2">Your gateway to cinematic excellence</p>
+	</header>
+
+	<div class="gif-container text-center mb-4">
+		<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm9zaDhuYnc5eGEweHRndXlvcjZyY2NzbGlmOXRlZTFhZW4zanBpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cuRKusHF9CfLK9ERCb/giphy.gif" alt="Film GIF" class="gif-image" />
+	</div>
+
+	<!-- 🔹 İstatistik Kartları -->
+	<div class="glass-card container p-4 mb-5">
+		<br />
+		<br />
+		<div class="row gap-4 justify-content-center">
+			<div class="col-md-3 stat-card shadow">
+				<h5 class="stat-title">Movies</h5>
+				<p class="stat-value">@ViewBag.MovieCount</p>
+			</div>
+			<div class="col-md-3 stat-card shadow">
+				<h5 class="stat-title">Actors</h5>
+				<p class="stat-value">@ViewBag.ActorCount</p>
+			</div>
+			<div class="col-md-3 stat-card shadow">
+				<h5 class="stat-title">Genres</h5>
+				<p class="stat-value">@ViewBag.GenreCount</p>
+			</div>
+		</div>
+
+		<br />
+		<br />
+		<!-- 🔹 Last Added Film KARTI – ISTATISTIKLERİN DIŞINDA -->
+
+
+		<div class="slider-container">
+			@for (int i = 0; i < Model.Count; i++)
+			{
+				<div class="slider-item @(i == 0 ? "active" : "")">
+					<br />
+					<h4 class="stat-title text-center">🎬 @Model[i].Title</h4>
+					<br />
+					<p class="desc-left text-center">@Model[i].Description</p>
+
+					<div class="film-preview-container">
+						<div class="film-poster">
+							<img src="@Model[i].PosterUrl" class="poster-img" alt="Poster" />
+						</div>
+						<div class="film-trailer">
+							<iframe src="@Model[i].TrailerUrl"
+									frameborder="0"
+									allow="autoplay; encrypted-media"
+									allowfullscreen
+									muted
+									class="trailer-video">
+							</iframe>
+						</div>
+					</div>
+					<br /><br /><br />
+				</div>
+			}
+		</div>
+		<div class="poster-strip-container mt-5">
+			<br /><br />
+			<h4 class="stat-title text-center">🎬Movies In FilmFusion</h4>
+			<br />
+			<div class="poster-strip">
+				@foreach (var movie in ViewBag.MoviePosters)
+				{
+					<div class="poster-card">
+						<img src="@movie.PosterUrl" alt="@movie.Title" />
+						<p class="poster-title">@movie.Title</p>
+					</div>
+				}
+			</div>
+		</div>
+
+		<div class="circle-actor-strip-container mt-5">
+			<h4 class="strip-title">🎭 Meet the Actors</h4>
+			<div class="circle-actor-strip">
+				@foreach (var actor in ViewBag.Actors)
+				{
+					var today = DateTime.Today;
+					var age = today.Year - actor.BirthDate.Year;
+					if (actor.BirthDate.Date > today.AddYears(-age)) { age--; }
+
+					<div class="circle-actor">
+						<img src="@actor.ActorPhotoUrl" alt="@actor.FullName" class="circle-photo" />
+						<div class="circle-name">@actor.FullName</div>
+						<div class="circle-age">@age</div>
+					</div>
+				}
+			</div>
+		</div>
+
+
+
+
+	</div>
+	<br />
+
+</div>
+
+@section Scripts {
+	<script>
+		let items = document.querySelectorAll('.slider-item');
+		let index = 0;
+
+		setInterval(() => {
+			items[index].classList.remove('active');
+			index = (index + 1) % items.length;
+			items[index].classList.add('active');
+		}, 8000); // Her 8 saniyede bir geçiş
+	</script>
+}
+
