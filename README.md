@@ -54,31 +54,24 @@ Proje, estetik arayüz ile güçlü mimari yapıyı bir araya getirir. **ViewCom
 
 ### 🎥 Home Page 
 
-<img src="assets/Animation1.gif" width="600" alt="Homepage Animation" />
+<img src="assets/Animation1.gif" width="700" alt="Homepage Animation" />
 
 
-<img src="assets/Animation2.gif" width="600" alt="Homepage Animation" />
+<img src="assets/Animation2.gif" width="700" alt="Homepage Animation" />
 
  
-<img src="assets/Animation3.gif" width="600" alt="Homepage Animation" />
+<img src="assets/Animation3.gif" width="700" alt="Homepage Animation" />
 
 
-<img src="assets/Animation4.gif" width="600" alt="Homepage Animation" />
+<img src="assets/Animation4_.gif" width="700" alt="Homepage Animation" />
 
 
-<img src="assets/Animation5.gif" width="600" alt="Homepage Animation" />
+<img src="assets/Animation5.gif" width="700" alt="Homepage Animation" />
 
 
+### 🎞️ Movie Page
+
+<img src="assets/Animation6.gif" width="700" alt="Homepage Animation" />
 
 
-
-
-
-
-
-## 🎬 Homepage Animation
-![Homepage](assets/Animation2.gif)
-
-
-## 🎬 Homepage Animation
-![Homepage](assets/Animation3.gif)
+<img src="assets/Animation7.gif" width="700" alt="Homepage Animation" />
