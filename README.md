@@ -51,23 +51,22 @@ Proje, estetik arayüz ile güçlü mimari yapıyı bir araya getirir. **ViewCom
 
 ## 🖼️ Ekran Görüntüleri & GIF’ler
 
-| 🎥 Ana Sayfa Slider | 
 
-<img src="assets/Animation1.gif" width="400" alt="Homepage Animation" />
+### 🎥 Home Page 
 
-
-## 🎬 Homepage Animation
-![Homepage](assets/Animation1.gif)
+<img src="assets/Animation1.gif" width="600" alt="Homepage Animation" />
 
 
+<img src="assets/Animation2.gif" width="600" alt="Homepage Animation" />
+
+ 
+<img src="assets/Animation3.gif" width="600" alt="Homepage Animation" />
 
 
-🖼️ Poster Şeridi | 
+<img src="assets/Animation4.gif" width="600" alt="Homepage Animation" />
 
 
-
-
-⚙️ Admin Panel |
+<img src="assets/Animation5.gif" width="600" alt="Homepage Animation" />
 
 
 
