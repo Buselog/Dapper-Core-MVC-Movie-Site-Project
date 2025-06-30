@@ -50,6 +50,7 @@ Proje, estetik arayüz ile güçlü mimari yapıyı bir araya getirir. **ViewCom
 -----
 
 ## 🖼️ Ekran Görüntüleri & GIF’ler
+##### GIF animasyonları birkaç saniyede görüntülenebilir.
 
 
 ### 🎥 Home Page 
@@ -68,10 +69,65 @@ Proje, estetik arayüz ile güçlü mimari yapıyı bir araya getirir. **ViewCom
 
 <img src="assets/Animation5.gif" width="700" alt="Homepage Animation" />
 
+-----
 
 ### 🎞️ Movie Page
 
-<img src="assets/Animation6.gif" width="700" alt="Homepage Animation" />
+#### Movie List
+
+<img src="assets/Animation6.gif" width="700" />
+
+#### Update Movie
+
+<img src="assets/Animation7.gif" width="700" />
+
+-----
+
+### 💡 Actor Page
+
+#### Actor List
+
+<img src="https://github.com/user-attachments/assets/ae3785f5-f7d8-4f4d-9f75-dbbe7047c2a4" width="700"  />
+
+#### Update Actor
+
+<img src="https://github.com/user-attachments/assets/785232a7-c377-439e-b52a-0f41f5e673b3" width="700" />
+
+#### Add New Actor
+
+<img src="https://github.com/user-attachments/assets/645d03bb-9f01-4efe-a0b1-2062010b3d7c" width="700" />
 
 
-<img src="assets/Animation7.gif" width="700" alt="Homepage Animation" />
+-----
+
+### 👩‍🎤 Movie - Actor Page
+
+
+#### Movie - Actor List
+
+<img src="https://github.com/user-attachments/assets/83f7ed5a-924a-49d4-b99f-47659d90d95b" width="700"  />
+
+
+#### Update Movie - Actor
+
+<img src="https://github.com/user-attachments/assets/9edccc8a-497c-4994-a927-b4ee95ca171c" width="700" />
+
+-----
+
+
+### 👩‍🎤 Genre Page
+
+
+#### Genre List
+
+<img src="https://github.com/user-attachments/assets/01280629-0af4-4376-ad8d-630acc0021da" width="700"  />
+
+
+#### Add Genre
+
+<img src="https://github.com/user-attachments/assets/47e8f97f-cfad-4576-9644-fa3fe0908e9b" width="700" />
+
+
+
+
+
